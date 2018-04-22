@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>Inicio de sesión</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="JS/moment.js"></script>
+	<script src="JS/jquery.js"></script>
+	<script src="JS/valid.js"></script>
+        <link rel="stylesheet" href="CSS/w3.css"/>
+    </head>
+    <body class="w3-light-grey">
+        
+        <header class="w3-center w3-opacity"><h1>Pagina principal</h1></header>
+        
+            
+            
+            <div class="w3-bar">
+                <button type="submit" name="registro" id="registro" onclick="document.getElementById('id01').style.display='block'"
+                        style="width: 50%;" class="w3-button w3-bar-item w3-blue-gray"><h2 class="w3-opacity">Registrarte</h2></button>
+                <button type="submit" name="ingresar" id="registro" onclick="document.getElementById('id02').style.display='block'"
+                        style="width: 50%;" class="w3-button w3-bar-item w3-blue-gray"><h2 class="w3-opacity">Iniciar Sesion</h2></button>
+            </div>
+            
+            <!--Inicio Modal Registro-->
+            <form method="GET" action="Registrar">
+                <div id="id01" class="w3-modal">
+
+                    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+                        <div class="w3-center"><br>
+                            <span onclick="document.getElementById('id01').style.display='none'"
+                                  class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+                            <h3 class="w3-opacity">Registrarte</h3>
+                        </div>
+
+                            <!--Inicio Contenido del modal-->
+
+                            <div class="w3-section w3-padding">
+
+                                <label><b>Nombre de Usuario</b></label>
+                                <input class="w3-input w3-border w3-margin-bottom" type="text" maxlength="20"
+                                       placeholder="Max. 20 Caracteres" name="usuarioR" id="usuarioR" required>
+                                <label><b>Contraseña</b></label>
+                                <input class="w3-input w3-border" type="text" placeholder="Contraseña" name="contrasenaR" id="contrasenaR" required>
+
+
+                                <div class="w3-bar">
+                                    
+                                <button class="val-subida w3-button w3-block w3-green w3-section w3-bar-item w3-padding" style="width: 50%" type="submit"
+                                        >Registrarte</button>
+                                <button onclick="document.getElementById('id01').style.display='none'" type="button" style="width: 50%"
+                                        class="w3-button w3-block w3-red w3-section w3-bar-item w3-padding">Cancelar</button>
+                                        
+                                </div>
+
+                            </div>
+
+                            <!--Fin contenido del modal-->
+
+                    </div>
+
+                </div>
+            
+            </form>
+            <!--Fin Modal Registro-->
+            
+            <!--Inicio Modal Iniciar Sesion-->
+            
+                <div id="id02" class="w3-modal">
+
+                    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+                        <div class="w3-center"><br>
+                            <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                                  title="Close Modal">&times;</span>
+                            <h3 class="w3-opacity">Iniciar Sesion</h3>
+                        </div>
+
+                            <!--Inicio Contenido del modal-->
+
+                            <div class="w3-section w3-padding">
+
+                                <label><b>Nombre de Usuario</b></label>
+                                <input class="val-texto w3-input w3-border w3-margin-bottom" type="text" maxlength="20" placeholder="Max. 20 Caracteres"
+                                       name="usuarioR" id="usuarioR" required>
+                                <label><b>Contraseña</b></label>
+                                <input class="val-texto w3-input w3-border" type="text" placeholder="Contraseña" name="contrasenaR" id="contrasenaR" required>
+
+
+                                <div class="w3-bar">
+                                    
+                                <button class="val-subida w3-button w3-block w3-green w3-section w3-bar-item w3-padding" style="width: 50%" type="submit">Iniciar Sesion</button>
+                                <button onclick="document.getElementById('id02').style.display='none'" type="button" style="width: 50%"
+                                        class="w3-button w3-block w3-red w3-section w3-bar-item w3-padding">Cancelar</button>
+                                        
+                                </div>
+
+                            </div>
+
+                            <!--Fin contenido del modal-->
+
+                    </div>
+
+                </div>
+            
+            <!--Fin Modal Inicio Sesion-->
+            
+        
+        
+    </body>
+</html>
