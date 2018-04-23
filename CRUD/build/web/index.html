@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Espero que se acuerden de encapsular</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/w3.css"/>
+    </head>
+    <body class="w3-blue-gray">
+        <div>Su primer proyecto completito
+           Sin Pack..</div>
+        <h1 class="w3-center w3-opacity">Agregrar nuevo empleado</h1>
+        <br>
+        <form method="post" name="emp" action="Add">
+            <table class="w3-hoverable">
+               
+                <tr>
+                    <td>
+                        Nombre:
+                    </td>
+                    <td>
+                        <input type="text" name="nombre" >
+                    </td>
+                </tr>
+               
+                <tr>
+                    <td>
+                        Password:
+                    </td>
+                    <td>
+                        <input type="text" name="pass" >
+                    </td>
+                </tr>
+               
+                <tr>
+                    <td>
+                        Mail:
+                    </td>
+                    <td>
+                        <input type="text" name="mail">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        Pais:
+                    </td>
+                    <td>
+                        <select name="pais" style="width:150px">
+                            <option>India</option>
+                            <option>Mexico</option>
+                            <option>Roma</option>
+                            <option>Algun lugar del mundo</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Guardar nuevo empleado">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <a href="Consulta">Consultar todos los empleados de la empresa</a>
+        
+        <h2>Verificar Usuarios</h2>
+        
+        <form action="verificarUsuarios" method="POST">
+            <br>
+            <input type="text" name="usuario">
+            <br>
+            <input type="password" name="pass">
+            <br>
+            <input type="submit" name="boton" value="Iniciar sesion">
+        </form>
+        
+    </body>
+</html>
